@@ -8,8 +8,12 @@ output: html_document
 Opening and creating labels for the variables.
 
 ```{r, echo=FALSE}
-setwd(https://github.com/mcurry1/Consulting560.git)
-table1<-read.csv("hw1data.csv",header=T)
+
+library(RCurl)
+
+table1<-read.csv("C:\\Users\\owner\\Documents\\Git\\Consulting560\\hw1data.csv",header=T)
+
+
 table1$race<-factor(table1$race,levels=c(0,1),labels=c("white","non-white"))
  table1$group<-factor(table1$group,levels=c(0,1),labels=c("control","experimental"))
  table1$sex<-factor(table1$sex,levels=c(0,1),labels=c("male","female"))
