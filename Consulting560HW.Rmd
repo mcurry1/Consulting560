@@ -18,6 +18,8 @@ table1$race<-factor(table1$race,levels=c(0,1),labels=c("white","non-white"))
 myVars<-c("sex","race","age","weight","height")
 
 catvars<-c("sex","race") 
+library(tableone)
+tab1<-CreateTableOne(vars=myVars,strata="group",data=table1,factorVars=catvars)
 
 ```
 
