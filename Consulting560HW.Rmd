@@ -20,6 +20,9 @@ myVars<-c("sex","race","age","weight","height")
 catvars<-c("sex","race") 
 library(tableone)
 tab1<-CreateTableOne(vars=myVars,strata="group",data=table1,factorVars=catvars)
+#Printing table 1
+
+print(tab1,showAllLevels=T)
 
 ```
 
