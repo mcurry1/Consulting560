@@ -13,12 +13,11 @@ table1<-read.csv("hw1data.csv",header=T)
 table1$race<-factor(table1$race,levels=c(0,1),labels=c("white","non-white"))
  table1$group<-factor(table1$group,levels=c(0,1),labels=c("control","experimental"))
  table1$sex<-factor(table1$sex,levels=c(0,1),labels=c("male","female"))
+#Subsetting tables to create a table 1.
+
+myVars<-c("sex","race","age","weight","height")
+
+catvars<-c("sex","race") 
+
 ```
 
-You can also embed plots, for example:
-
-```{r, echo=FALSE}
-plot(cars)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
