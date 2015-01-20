@@ -10,7 +10,7 @@ Opening and creating labels for the variables.
 ```{r, echo=FALSE}
 
 library(RCurl)
-
+#user name in git-mcurry1-repository 'Consulting560'
 table1<-read.csv("C:\\Users\\owner\\Documents\\Git\\Consulting560\\hw1data.csv",header=T)
 
 
